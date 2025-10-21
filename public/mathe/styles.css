@@ -1,0 +1,65 @@
+.section {
+    border: 2px solid white;
+    border-radius: 8px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+canvas {
+    align-self: center;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.vertical-line-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.vertical-line-container button{
+    width: 300px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #e100ff;
+    border-radius: 50%;
+    position: relative;
+    left: 0%;
+}
+
+.animated-circle{
+    left: 100%;
+}
+
+.smoothing-line{
+    width: 80%;
+    height: 4px;
+    background-color: #ffffff;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.rotated-90deg{
+    transform: rotate(90deg);
+}
+
+#smoothing-berzier-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
