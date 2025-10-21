@@ -27,6 +27,24 @@ export function quadraticBezier(t, p0, p1, p2) {
     return new Point(x, y);
 }
 
+// quadratic Bezier curve with 4 control points
+export function dynamicBezier(t, points) {
+    const n = points.length - 1;
+
+    let x = 0;
+    let y = 0;
+
+    for(let i = 0; i <= n; i++){
+        // x-component
+        x += bernsteinWeight(i, n, t) * points[i].x;
+
+        // y-component
+        y += bernsteinWeight(i, n, t) * points[i].y;
+    }
+
+    return new Point(x, y);
+}
+
 // i: which control point 
 // n: degree
 // t: time parameter [0, 1]
