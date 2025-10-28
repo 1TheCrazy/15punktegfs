@@ -6,13 +6,6 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "15punktegfs",
 	"compatibility_date": "2025-10-04",
-	"assets": {
-		// The path to the directory containing the `index.html` file to be served at `/`
-		"directory": "./public"
-	},
-	"observability": {
-		"enabled": true
-	},
 	"pages_build_output_dir": "public"
 	/**
 	 * Smart Placement
