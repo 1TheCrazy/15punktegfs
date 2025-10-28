@@ -15,7 +15,17 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('rotate-smoothing-canvas-button').addEventListener('click', () => {
         document.getElementById('canvas-animation-2').classList.toggle('rotated-90deg');
     });
+    document.getElementById("downloadBtn").addEventListener("click", () => {
+        // Wierd way to trigger download in JS
+        const link = document.createElement("a");
 
+        link.href = "../assets/bezier_kurven.pptm";
+        link.download = "bezier_kurven.pptm";
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
 
     // Start animation loop
     animate();
