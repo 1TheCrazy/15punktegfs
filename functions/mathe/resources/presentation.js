@@ -2,7 +2,7 @@ export async function onRequest(context) {
   // Get the Env-bound ASSETS fetcher that can read static files
   const { request, env } = context;
 
-  const assetPath = "../public/assets/bezier_kurven.pptm";
+  const assetPath = "/assets/bezier_kurven.pptm";
 
   // Fetch the static asset from the Pages bundle
   const assetResponse = await env.ASSETS.fetch(
@@ -16,6 +16,9 @@ export async function onRequest(context) {
 
   // Clone and override headers to force download
   const fileData = await assetResponse.arrayBuffer();
+
+console.log("Serving download for bezier_kurven.pptm");
+console.log("content: " + fileData.byteLength + " bytes");
 
   return new Response(fileData, {
     status: 200,
