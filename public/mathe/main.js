@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Wierd way to trigger download in JS
         const link = document.createElement("a");
 
-        link.href = "../assets/bezier_kurven.pptm";
-        link.download = "bezier_kurven.pptm";
+        link.href = "../assets/bezier_kurven.pptx";
+        link.download = "bezier_kurven.pptx";
 
         document.body.appendChild(link);
         link.click();

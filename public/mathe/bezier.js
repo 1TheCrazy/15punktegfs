@@ -16,7 +16,7 @@ export function cubicBezier(t, p0, p1, p2, p3) {
     return new Point(x, y);
 }
 
-// quadratic Bezier curve with 4 control points
+// quadratic Bezier curve with 3 control points
 export function quadraticBezier(t, p0, p1, p2) {
 
     // x-component
@@ -27,7 +27,7 @@ export function quadraticBezier(t, p0, p1, p2) {
     return new Point(x, y);
 }
 
-// quadratic Bezier curve with 4 control points
+// dynamically computes control points
 export function dynamicBezier(t, points) {
     const n = points.length - 1;
 
