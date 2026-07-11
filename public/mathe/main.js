@@ -80,7 +80,7 @@ function draw0() {
     const p = quadraticBezier(time(duration), points[0], points[1], points[2]);
 
     ctx.beginPath();
-    ctx.fillStyle = '#f97316';
+    ctx.fillStyle = '#ffffff';
     ctx.arc(p.x, p.y, 7, 0, Math.PI * 2);
     ctx.fill();
 
@@ -143,7 +143,7 @@ function draw1(){
     const p = cubicBezier(time(duration), points[0], points[1], points[2], points[3]);
 
     ctx.beginPath();
-    ctx.fillStyle = '#f97316';
+    ctx.fillStyle = '#ffffff';
     ctx.arc(p.x, p.y, 7, 0, Math.PI * 2);
     ctx.fill();
 
@@ -245,7 +245,7 @@ function draw2(startTime, isBackwards = false){
     const p = cubicBezier(isBackwards ? 1 - t : t, points[0], points[1], points[2], points[3]);
 
     ctx.beginPath();
-    ctx.fillStyle = '#f97316';
+    ctx.fillStyle = '#ffffff';
     ctx.arc(p.x, p.y, 7, 0, Math.PI * 2);
     ctx.fill();
 
